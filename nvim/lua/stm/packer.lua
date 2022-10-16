@@ -23,6 +23,12 @@ return require('packer').startup(function(use)
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     })
 
+
+    -- Golang Debuging
+    use('mfussenegger/nvim-dap')
+    use('leoluz/nvim-dap-go')
+    use('rcarriga/nvim-dap-ui')
+
     -- All the things
     use("neovim/nvim-lspconfig")
     use("hrsh7th/cmp-nvim-lsp")
