@@ -6,8 +6,16 @@ local function map(mode, lhs, rhs, opts)
   vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
+map( "n", "<leader>gr", ":!go run .<CR>" )
+
+map( "i", "<C-s>", "<ESC>:w<CR>" ) -- save in insert mode
+map( "n", "<C-s>", ":w<CR>" ) -- save in normal mode
+map( "n", "<leader>s", ":w<CR>" ) -- save
+map( "n", "<leader>q", ":q<CR>" ) -- quit
+map( "n", "<leader>Q", ":q!<CR>" ) -- force quit
+
 map( "n", "<F4>", ":lua require('dapui').toggle()<CR>" )
-map( "n", "<F5>", ":lua require('dap').toggle_breakpoint()<CR>" )
+map( "n", "<F6>", ":lua require('dap').toggle_breakpoint()<CR>" )
 map( "n", "<F9>", ":lua require('dap').continue()<CR>" )
 
 map( "n", "<F1>", ":lua require('dap').step_over()<CR>" )

@@ -29,6 +29,9 @@ return require('packer').startup(function(use)
     use('leoluz/nvim-dap-go')
     use('rcarriga/nvim-dap-ui')
 
+    -- Treesitter
+    use("nvim-treesitter/nvim-treesitter", {run = ":TSUpdate"})
+
     -- All the things
     use("neovim/nvim-lspconfig")
     use("hrsh7th/cmp-nvim-lsp")
