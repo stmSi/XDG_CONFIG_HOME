@@ -58,4 +58,5 @@ return require('packer').startup(function(use)
 
     use("mbbill/undotree")
 
+    use "terrortylor/nvim-comment"
 end)
