@@ -1,3 +1,4 @@
+require'colorizer'.setup()
 vim.g.theprimeagen_colorscheme = "tokyonight"
 
 function ColorMyPencils()

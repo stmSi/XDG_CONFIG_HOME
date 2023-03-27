@@ -59,4 +59,10 @@ return require('packer').startup(function(use)
     use("mbbill/undotree")
 
     use "terrortylor/nvim-comment"
+
+    use "norcalli/nvim-colorizer.lua"
+
+    -- Coc
+    use {'neoclide/coc.nvim', branch = 'release'}
+
 end)

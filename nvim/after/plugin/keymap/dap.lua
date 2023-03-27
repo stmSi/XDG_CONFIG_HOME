@@ -8,6 +8,16 @@ end
 
 map( "n", "<leader>gr", ":!go run .<CR>" )
 
+-- Rust Stuffs
+map( "n", "<leader>f", ":!cargo fmt<CR>" )
+map( "n", "<leader>cr", ":!cargo run " )
+
+-- Coc stuffs
+map( "n", "<leader>dd", ":<C-u>call CocAction('jumpDefinition')<CR>" )
+map( "n", "<leader>dr", ":<C-u>call CocAction('jumpReferences')<CR>" )
+map( "n", "<leader>dj", ":<C-u>call CocAction('jumpImplementation')<CR>" )
+
+
 map( "i", "<C-s>", "<ESC>:w<CR>" ) -- save in insert mode
 map( "n", "<C-s>", ":w<CR>" ) -- save in normal mode
 map( "n", "<leader>s", ":w<CR>" ) -- save

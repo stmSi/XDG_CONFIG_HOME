@@ -1,5 +1,11 @@
 require('dap-go').setup()
 local dap = require "dap"
+    dap.adapters.cppdbg = {
+      id = 'cppdbg',
+      type = 'executable',
+      command = '/home/stm/.bin/extension/debugAdapters/bin/OpenDebugAD7',
+    }
+
   dap.adapters.go = function(callback, config)
     local stdout = vim.loop.new_pipe(false)
     local handle
